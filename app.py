@@ -1,4 +1,9 @@
+import subprocess
+import sys
+
 from flask import Flask
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'flask-restful'])
 from flask_restful import Resource, Api, reqparse
 
 import pymongo  # package for working with MongoDB
